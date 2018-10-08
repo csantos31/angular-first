@@ -1,12 +1,52 @@
 <div class="container-fluid">
     <div class="row"> <!-- Give this div your desired background color -->
-        <div class="head-i">
-          Bem vindo á minha primeira aplicação em Angular
+        <div class="col-md-12 col-md-12 col-xs-12 head-i">
+          <h1>Bem Vindo a minha primeira aplicação em Angular</h1>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    < form / >
+                <div class="col-md-12 col-lg-12 col-xs-12">
+                    <p>Primeiro, iniciarei montando o layout da página </p>
+                    <p>Em seguida, alimentarei ela com dados de alguma API.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row form-line">
+                <div class="col-md-4">
+                    <form class="form-one" id="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Endereço de email</label>
+                            <input  type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Seu email">
+                            <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Senha</label>
+                            <input  type="password" class="form-control" id="senha" placeholder="Senha">
+                            <button type="button" ng-click="functionClick()" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>        
+                </div>
+                <div class="col-md-8">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <td scope="col-md-6">Username</td>
+                                <td scope="col-md-6">Senha</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of lista">
+                                <td>{{i.nome}}</td>
+                                <td>{{i.senha}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 foot">
+                        <p>Cada submit no formulário, deve carregar um registro na tela.</p>
                 </div>
             </div>
         </div>
