@@ -20,19 +20,19 @@ export class AppComponent {
     this.lista = [
       {
         "id": "1",
-        "nome": "Cyntia",
+        "email": "Cyntia",
         "senha": "secret123"
       },
       {
         "id": "1",
-        "nome": "Ingrid",
+        "email": "Ingrid",
         "senha": "secret321"
       }
     ]
   }
 
   functionClick(){
-    console.log('oi');
+    console.log('minha paciência ta morrendo agr');
   }
 }
 
